@@ -17,8 +17,11 @@ class program
     {
 
        Console.Clear();
-       Console.WriteLine(GetDayName(DayEnum.Wednesday));
-       Console.ReadLine();
+       Console.Write("Please Enter day ");
+       int userNumber = int.Parse(Console.ReadLine());
+       DayEnum myDay = (DayEnum)userNumber;
+       Console.WriteLine(GetDayName(myDay)); 
+      
 
     }
      public static string GetDayName(DayEnum day)
